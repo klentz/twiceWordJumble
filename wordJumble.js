@@ -6,6 +6,8 @@ function getCombinations(){
 		return;
 	}
 	
+	$('#waitingDiv').show();
+	
 	$('#stringInput').val('');
 	$('#wordList').empty();
 	
@@ -71,6 +73,8 @@ function getWords(string,wordList){
 				$('#wordList').append('<li style="font-size:'+ size +'pt;padding-left:'+ pLeft +'px;padding-right:'+ pRight +'px"><a href="http://dictionary.reference.com/browse/'+ $(this).text() +'?s=t" target="_blank">' + $(this).text() + '</a></li>');
 				$('#words').show();
 			});
+			
+			$('#waitingDiv').hide();
 		}
 	});
 }
