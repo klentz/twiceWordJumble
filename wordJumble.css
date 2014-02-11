@@ -50,8 +50,9 @@ body{
 }
 
 #words{
-	height:375px;
+	//min-height:375px;
 	max-width:980px;
+	//height:100%;
 	width:100%;
 	border-color:#D4D4D4;
     border-style:solid;
