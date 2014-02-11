@@ -8,7 +8,6 @@ $password = 'twicePW9246Q31';
 $database = 'dictionary';
 
 $options = $_POST['wordOptions'];
-//$options = explode(',', $options);
 
 $connection = mysql_connect($hostname, $username, $password); 
 
@@ -33,5 +32,5 @@ while($row = mysql_fetch_array($result)){
 	print('<word>' . $row['word'] . '</word>');
 }
 print('</response>');
-$num = mysql_numrows($result);
+
 ?>
